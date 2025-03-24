@@ -1,0 +1,12 @@
+.wrapper {
+  background-color: #bcdbb1;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.text {
+  color: rgb(25, 41, 80);
+}

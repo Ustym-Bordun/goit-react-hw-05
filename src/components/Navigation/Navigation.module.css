@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  padding: 15px;
+  background-color: #f2f47e;
+}
+
+.link {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.active {
+  color: rgb(4, 53, 116);
+  text-decoration: underline;
+}
