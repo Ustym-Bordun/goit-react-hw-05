@@ -39,7 +39,8 @@ body {
   font-family: 'Roboto', sans-serif;
 
   color: #000000;
-  background-color: #c7ddd3;
+  background-color: rgb(56, 56, 56);
+  min-height: 100vh;
 }
 
 /* .ReactModal__Body--open {

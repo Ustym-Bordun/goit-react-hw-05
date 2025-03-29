@@ -1,12 +1,139 @@
-.wrapper {
-  background-color: #bcdbb1;
+.creditsWrapper {
+  display: flex;
+  gap: 40px;
+  color: rgba(255, 255, 255, 0.9);
 }
 
-.title {
+.castWrapper {
+  width: calc((100% - 40px) / 2);
+}
+.castTitle {
   font-size: 22px;
   font-weight: 600;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.scrollWrapper {
+  max-height: 800px;
+  overflow: auto;
+
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 8px;
+}
+/* Стилізація скролу */
+.scrollWrapper::-webkit-scrollbar {
+  width: 8px; /* Тонка смуга */
+}
+.scrollWrapper::-webkit-scrollbar-track {
+  background: transparent; /* Фон */
+}
+.scrollWrapper::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2); /* Колір скролу */
+  border-radius: 3px; /* Закруглені краї */
+}
+.scrollWrapper::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5); /* Темніший при наведенні */
+}
+.castList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.castItem {
+  display: flex;
+
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: rgba(88, 169, 255, 0.25);
+}
+.castImg {
+  width: 220px;
+  margin-right: 30px;
+}
+.castInfoBlock {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+.castInfoWrapper {
+  display: flex;
+  align-items: center;
+}
+.castText:first-child {
+  width: 110px;
+}
+.castText {
+  font-size: 18px;
+  width: 140px;
 }
 
-.text {
-  color: rgb(23, 34, 36);
+.crewWrapper {
+  width: calc((100% - 40px) / 2);
+}
+.crewTitle {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 14px;
+}
+.scrollWrapper {
+  max-height: 800px;
+  overflow: auto;
+
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 8px;
+}
+/* Стилізація скролу */
+.scrollWrapper::-webkit-scrollbar {
+  width: 8px; /* Тонка смуга */
+}
+.scrollWrapper::-webkit-scrollbar-track {
+  background: transparent; /* Фон */
+}
+.scrollWrapper::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2); /* Колір скролу */
+  border-radius: 3px; /* Закруглені краї */
+}
+.scrollWrapper::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5); /* Темніший при наведенні */
+}
+.crewList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.crewItem {
+  display: flex;
+
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: rgba(88, 169, 255, 0.25);
+}
+.crewImg {
+  width: 220px;
+  margin-right: 30px;
+}
+.crewInfoBlock {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0;
+}
+.crewInfoWrapper {
+  display: flex;
+  align-items: center;
+}
+.crewText:first-child {
+  width: 110px;
+}
+.crewText {
+  font-size: 18px;
+  width: 140px;
 }

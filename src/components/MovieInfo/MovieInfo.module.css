@@ -1,0 +1,135 @@
+.wrapper {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 30px;
+
+  position: relative;
+}
+.backLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 40px;
+  width: 100px;
+
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(88, 169, 255, 0.25);
+  transition: background-color 250ms ease-in-out;
+}
+.backLink:hover,
+.backLink:focus {
+  background-color: rgba(88, 169, 255, 0.5);
+}
+.title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+
+  padding-top: 10px;
+  margin-bottom: 30px;
+}
+.topPart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 230px;
+  width: 80%;
+  margin: 0 auto 30px;
+}
+.img {
+  width: 320px;
+  object-fit: contain;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  gap: 20px;
+}
+.infoTitle {
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.topPartInfoWrappers {
+  display: flex;
+  gap: 40px;
+}
+.text {
+  font-size: 20px;
+}
+.topPartInfoWrappers .text:first-child {
+  width: 140px;
+  text-align: center;
+}
+.topPartInfoWrappers .text:last-child {
+  flex-grow: 1;
+  text-align: center;
+}
+.ganresList {
+  display: flex;
+  justify-content: center;
+
+  flex-grow: 1;
+  flex-wrap: wrap;
+  gap: 10px 30px;
+}
+/* .ganresItem {
+} */
+.ganreText {
+  font-size: 20px;
+}
+.overviewTitle {
+  font-size: 20px;
+}
+.overview {
+  font-size: 18px;
+  line-height: 1.3em;
+}
+/* .bottomPart {
+  margin-bottom: 30px;
+} */
+.bottomTitle {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.companiesList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  text-align: center;
+}
+.companiesItem {
+  /* flex-grow: 1; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  width: calc((100% - 90px) / 4);
+
+  padding: 15px;
+  border-radius: 20px;
+  background-color: rgba(88, 169, 255, 0.25);
+}
+.companiesText {
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+.companiesImg {
+  flex-grow: 1;
+  width: 180px;
+  object-fit: contain;
+}

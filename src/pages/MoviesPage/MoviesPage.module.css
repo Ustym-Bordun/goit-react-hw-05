@@ -1,12 +1,36 @@
 .wrapper {
-  background-color: #b1c4db;
+  padding: 20px 0;
 }
-
-.title {
-  font-size: 22px;
-  font-weight: 600;
+.searchedText {
+  width: 720px;
+  margin: 0 auto;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(88, 169, 255, 0.25);
 }
+.spanText {
+  text-decoration: underline;
 
-.text {
-  color: rgb(42, 13, 51);
+  display: block;
+  width: 100%;
+  overflow: auto;
+  padding-bottom: 6px;
+}
+/* Стилізація скролу */
+.spanText::-webkit-scrollbar {
+  height: 8px; /* Тонка смуга */
+}
+.spanText::-webkit-scrollbar-track {
+  background: transparent; /* Фон */
+}
+.spanText::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.4); /* Колір скролу */
+  border-radius: 3px; /* Закруглені краї */
+}
+.spanText::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.7); /* Темніший при наведенні */
 }

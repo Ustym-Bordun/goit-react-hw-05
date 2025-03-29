@@ -1,0 +1,42 @@
+.wrapper {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  line-height: 0;
+
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 50%;
+
+  background-color: rgb(36, 36, 36);
+
+  transition:
+    border-color 250ms ease-in-out,
+    transform 250ms ease-in-out;
+}
+
+.btn:not(:disabled):hover,
+.btn:not(:disabled):focus {
+  transform: scale(0.95);
+  border-color: rgba(255, 255, 255, 0.9);
+}
+
+.icon {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.btn:disabled {
+  cursor: auto;
+  background-color: rgb(70, 70, 70);
+}
+
+.btn:disabled .icon {
+  color: rgba(255, 255, 255, 0.75);
+}

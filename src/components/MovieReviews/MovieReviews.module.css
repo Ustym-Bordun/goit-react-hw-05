@@ -1,12 +1,58 @@
-.wrapper {
-  background-color: #bcdbb1;
+.reviewsWrapper {
+  color: rgba(255, 255, 255, 0.9);
 }
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+/* .item {
+} */
+.reviewTop {
+  display: flex;
+  justify-content: space-between;
+  /* width: 80%; */
+  padding: 3px 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 
-.title {
+  background-color: rgba(88, 169, 255, 0.25);
+}
+.reviewTop .text {
   font-size: 22px;
-  font-weight: 600;
+}
+.text {
+  font-size: 18px;
+}
+.comment {
+  max-height: 140px;
+  overflow: auto;
+  color: rgba(255, 255, 255, 0.8);
+}
+/* Стилізація скролу */
+.comment::-webkit-scrollbar {
+  width: 8px; /* Тонка смуга */
+}
+.comment::-webkit-scrollbar-track {
+  background: transparent; /* Фон */
+}
+.comment::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2); /* Колір скролу */
+  border-radius: 3px; /* Закруглені краї */
+}
+.comment::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5); /* Темніший при наведенні */
 }
 
-.text {
-  color: rgb(23, 34, 36);
+.noReviewsText {
+  width: 720px;
+  margin: 0 auto;
+  padding: 10px 12px;
+  border-radius: 10px;
+
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(88, 169, 255, 0.25);
 }

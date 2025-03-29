@@ -1,12 +1,7 @@
-.wrapper {
-  background-color: #bcdbb1;
-}
+.list {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, minmax(150px, 1fr));
 
-.title {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.text {
-  color: rgb(67, 31, 18);
+  margin-bottom: 20px;
 }

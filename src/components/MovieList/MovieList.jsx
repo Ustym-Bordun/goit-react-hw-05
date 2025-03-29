@@ -1,15 +1,20 @@
-// import { NavLink } from 'react-router';
+import MovieCard from '../MovieCard/MovieCard';
 import css from './MovieList.module.css';
 
-const MovieList = () => {
+const MovieList = ({ movies }) => {
+  // console.log(movies);
+
   return (
-    <div className={css.wrapper}>
-      <p className={css.title}>MovieList</p>
-      <p className={css.text}>Lorem ipsum dolor</p>
-      <p className={css.text}>Lorem ipsum dolor</p>
-      <p className={css.text}>Lorem ipsum dolor</p>
-      <p className={css.text}>Lorem ipsum dolor</p>
-    </div>
+    <ul className={css.list}>
+      {movies.map(({ id, ...movie }) => {
+        // console.log(movie);
+        return (
+          <li key={id}>
+            <MovieCard movieId={id} movie={movie} />
+          </li>
+        );
+      })}
+    </ul>
   );
 };
 
